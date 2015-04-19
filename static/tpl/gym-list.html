@@ -1,0 +1,14 @@
+<ul class="gym-list">
+  <li ng-repeat="item in gymList">
+    <a href="#/detail/{{item.bid}}/{{item.bname}}" class="cf">
+      <div class="fl thumb">
+        <img src="static/images/thumb.jpg">     
+      </div>
+      <div class="fl">
+        <h2 class="gym-name">{{item.bname}}</h2>
+        <p class="gym-time">营业时间：{{item.bstart}}-{{item.bend}}</p>
+        <p class="gym-price">¥{{item.bminprice}}起</p>
+      </div>      
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,80 @@
+.pay-body{
+  background: #efefef;
+  padding-top: 15px;
+}
+.thumb{
+  width: 110px;
+  margin-right: 10px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+.section{
+  padding:10px;
+  font-size: 18px;
+  background: white;
+/*  border-top: solid 1px #e5e5e5;
+  border-bottom: solid 1px #e5e5e5;*/
+  margin-bottom: 15px;
+}
+.i-clock{
+  vertical-align: middle;
+}
+.pay-list{
+  border-top: solid 1px #e5e5e5;
+  background: white;
+}
+.pay-list li{
+  padding: 10px;
+  border-bottom: solid 1px #e5e5e5;
+  font-size: 18px;
+  position: relative;
+  font-weight: 500;
+}
+.pay-list li a{
+  display: block;
+  color: black;
+}
+
+.i-alipay,.i-wechat{
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.i-togo{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.pay-method{
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.alipay-form{
+  position: absolute;
+  background: rgba(0,0,0,0.5)
+}
+
+.i-know{
+  width: 100px;
+  height: 30px;
+  color:white;
+  line-height: 30px;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 3px;
+  border: solid 1px white;
+}
+.share-mask{
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+input[type="submit"]{
+  width: 100%;
+  
+}

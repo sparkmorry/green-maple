@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>青枫叶健身</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="static/css/basic/reset.css">
+  <link rel="stylesheet" type="text/css" href="static/css/basic/basic.css">
+  <link rel="stylesheet" type="text/css" href="static/css/basic/common.css">
+  <link rel="stylesheet" type="text/css" href="static/css/basic/icon.css">
+  <link rel="stylesheet" type="text/css" href="static/css/pages/index.css">
+  <link rel="stylesheet" type="text/css" href="static/css/pages/detail.css">
+  <link rel="stylesheet" type="text/css" href="static/css/pages/bind.css">
+  <link rel="stylesheet" type="text/css" href="static/css/pages/pay.css">
+  <link rel="stylesheet" type="text/css" href="static/css/pages/order.css">
+  <script type="text/javascript" src="static/js/lib/zepto.js"></script>
+</head>
+<body class="index-body">
+  <div ng-app="gymApp" style=" height: 100%; ">
+    <div ng-view></div>
+    <div mc-messages></div>
+  </div>
+  <div class="navigation cf">
+    <a href="#">
+      <div class="fl nav-item gym current" id="J-gym-nav">
+        <i class="icon i-gym-green icon-gym"></i>健身
+      </div>    
+    </a>
+    <a href="#/order">
+      <div class="fl nav-item" id="J-mine-nav">
+        <i class="icon i-mine-gray icon-mine"></i>我的
+      </div>
+    </a>
+  </div>
+
+  <script type="text/javascript" src="static/js/lib/angular.js"></script>
+  <script type="text/javascript" src="static/js/lib/angular-route.js"></script>
+  <script type="text/javascript" src="static/js/module/cookie.js"></script>
+  <script type="text/javascript" src="static/js/module/countdown.js"></script>
+  <script type="text/javascript" src="static/js/lib/message-center.js"></script>
+  <script type="text/javascript" src="static/js/apps/gym/service.js"></script>
+  <script type="text/javascript" src="static/js/apps/gym/controller.js?version=2.1"></script>
+  <script type="text/javascript" src="static/js/apps/gym/app.js"></script>
+  <script type="text/javascript">
+    var jQgym = $('#J-gym-nav');
+    var jQmine = $('#J-mine-nav');
+    var jQgymIcon = jQgym.find('.icon-gym');
+    var jQmineIcon = jQmine.find('.icon-mine');
+
+    //选中健身
+    jQgym.bind('click', function() {
+      $(this).addClass('current');
+      jQmine.removeClass('current');
+      jQgymIcon.removeClass('i-gym-gray').addClass('i-gym-green');
+      jQmineIcon.removeClass('i-mine-green').addClass('i-mine-gray');
+    })
+
+    // 选中我的
+    jQmine.bind('click', function() {
+      $(this).addClass('current');
+      jQgym.removeClass('current');
+      jQgymIcon.removeClass('i-gym-green').addClass('i-gym-gray');
+      jQmineIcon.removeClass('i-mine-gray').addClass('i-mine-green');
+    })  
+
+    var currentUrl = window.location.href;  
+    if(currentUrl.indexOf("order") > -1){
+      jQmine.click();
+    }else{
+      // jQgym.click();
+    }
+  </script>
+
+</body>

@@ -1,0 +1,16 @@
+<h2 class="p-text">请输入手机号码验证</h2>
+
+<div class="bind-wrapper">
+  <p class="err-msg" style="margin-bottom:5px;">{{errMsg}}</p>
+  <div class="input-section">
+    <span class="send-btn" ng-class="{'btn-disable': disable==true}"  ng-click="sendMsg()">发送验证码{{leftTime}}</span>
+    <div class="phone-input">
+      <input type="tel" id="J-phone-input" class="input-border-gray" placeholder="手机号">
+    </div>
+  </div>
+  <div class="input-section">
+    <input id="J-verify-code" type="tel" class="input-border-gray" placeholder="验证码">
+  </div>
+
+  <div ng-click="verify()" class="btn">确定</div>  
+</div>

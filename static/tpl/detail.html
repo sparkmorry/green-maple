@@ -1,0 +1,46 @@
+<div class="slide">
+  <img src="static/images/3.jpg"> 
+  <p class="name-mask">{{gymDetail.bname}}</p>    
+</div>
+<div class="text-wrapper">
+  <div class="info section">
+    <p>
+      <span class="label">预约时间：</span>
+      <select ng-model="timeSelected" ng-change="changeTime(timeSelected)">
+        <option ng-repeat="op in gymDetail.book" value="{{op}}" ng-disabled="op.left == 0">{{op.start}}--{{op.end}}</option>
+      </select>
+      <!-- <span class="gym-time-select">14:00--15:00</span> -->
+    </p>
+    <p>
+      <span class="label">健身价格：</span>
+      <span class="gym-price">¥{{currentPrice}}/次</span>
+    </p>    
+  </div>
+
+  <div class="section">
+    <a href="#/login/{{bid}}/{{bname}}/{{currentTid}}">
+      <div class="btn">预约购买</div>
+    </a>      
+  </div> 
+
+  <div class="section cf">
+    <div class="fl" style="width: 80%;">
+      <h2 class="label">{{gymDetail.bname}}</h2>
+      <div class="tc-gray gym-info" ng-bind-html="detailHtml"></div>     
+    </div>
+    <div class="fr distance">
+      <div class="phone-wrapper">
+        <a href="tel:{{phone}}"><i class="icon i-phone"></i></a>
+      </div>        
+    </div>
+  </div>
+
+  <div class="section section-last">
+    <h2 class="label">使用说明</h2>
+    <ol class="introdution">
+      <li class="tc-gray">此服务采用实名制，只服务于会员使用，如有疑问请到店咨询具体情况。</li>
+      <li class="tc-gray">使用时间：2015年1月1日至2015年5月30日，周末、法定假日均可使用。</li>
+      <li class="tc-gray">不适宜参加人群：老人、孕妇、心脏病患者。</li>
+    </ol>
+  </div>    
+</div>

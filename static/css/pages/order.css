@@ -1,0 +1,49 @@
+.order-info, .order-time{
+  font-size: 0.8em;
+}
+.order-time{
+  margin-top: 5px;
+  color: #6f6f6f;
+}
+
+.status--1{
+  color:#eb6100;
+}
+.status-1{
+  color:#82d5a5;
+}
+.status-2{
+  color:#bebebe;
+}
+.status-3{
+  color:#bebebe;
+}
+.orders-body{
+  background: #efefef;
+  margin-bottom: 50px;
+}
+.order a{
+  color: black;
+  display: block;
+}
+.order{
+  padding:10px;
+  font-size: 18px;
+  background: white;
+  border-bottom: solid 1px #e5e5e5;
+  position: relative;
+  padding-right: 30px;
+}
+
+.order-title{
+  font-size: 16px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.order .i-togo{
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}

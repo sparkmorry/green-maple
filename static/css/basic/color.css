@@ -1,0 +1,11 @@
+/* color sheet:;
+ * 红色(main)： #eb6100
+ * balck: #6a6a6a;
+*/
+
+.tc-red{
+  color: #eb6100;
+}
+.tc-gray{
+  color: #6a6a6a;
+}

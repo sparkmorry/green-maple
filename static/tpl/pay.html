@@ -1,0 +1,32 @@
+<div class="section">
+  <img class="thumb" src="static/images/thumb.jpg">
+  <!-- <span>健身服务</span><span class="tc-red">X2</span> -->
+  <span>价格：<span class="tc-red">¥{{currentPrice}}</span></span>
+</div>  
+<div class="section">
+  <i class="icon i-clock"></i>
+  <span>健身时间：</span>
+  <span>{{currentTime}}</span>
+</div>
+<div style="margin-bottom: 20px;">
+  <p class="pay-method">支付方式</p>
+  <ul class="pay-list">
+<!--     <li>
+      <a href="success.html">
+        <i class="icon i-wechat"></i>微信支付<i class="icon i-togo"></i></li>
+      </a> 
+    </li>  -->   
+    <li>
+      <a href="javascript:;" ng-click="payByAlipay()">
+        <i class="icon i-alipay"></i>支付宝支付<i class="icon i-togo"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="share-mask hide" id="J-share-tip">
+  <img class="share-img" style="width:100%" src="static/images/tip.png" alt="">
+  <div class="i-know" id="J-i-know">我知道了</div>
+</div>
+<div ng-bind-html="payHtml" class="alipay-form" style="width:100%">
+  
+</div>

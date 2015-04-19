@@ -1,0 +1,43 @@
+body{
+  -webkit-font-smoothing: antialiased;
+  /*background-color: #e7f2f7;*/
+}
+
+.hide{
+  display: none;
+}
+.btn{
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  background-color: #43c67f;
+  padding: 12px 0;
+  font-weight: 700;
+  border-radius: 2px;
+  margin: auto;
+  margin-top: 15px;
+}
+.loading-wrapper{
+  text-align: center;
+}
+.loading-full{
+  padding-top: 100px;
+}
+
+.input-border-gray{
+  border: solid 1px #d6d5d5;
+
+}
+
+.input-border-gray:focus{
+    outline: 0;
+}
+
+.err-msg{
+  color: #EF894A;
+}
+.btn-disable{
+  opacity: 0.5;
+}

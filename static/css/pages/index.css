@@ -1,0 +1,63 @@
+.gym-list{
+  padding: 10px;  
+}
+.gym-list li{
+  border-bottom: solid 1px #eff1f3;
+  padding: 10px 0 6px 0;
+}
+.gym-list a{
+  display: block;
+  color: black;
+}
+.thumb{
+  width: 110px;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+.thumb img{
+  width: 110px;
+}
+.gym-name{
+  font-size: 1.2em;
+}
+.gym-time{
+  color: #6a6a6a;
+  font-size: 1.1em;
+}
+.gym-price{
+  color: #eb6100;
+  font-size: 1.2em;
+}
+.gym-name, .gym-time{
+  margin-bottom: 5px;
+}
+.navigation{
+  width: 100%;
+  position: fixed;
+  bottom:0;
+
+}
+.nav-item{
+  width: 50%;
+  box-sizing:border-box;
+  border-top:solid 1px #bfbfbf;
+  color: #6a6a6a;
+  font-weight: 700;
+  background: #eee;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0;
+  line-height: 25px;
+}
+
+.nav-item.current{
+  background: #f7f7f8;
+  color: #43c67f;
+}
+.gym{
+  border-right:solid 1px #bfbfbf;
+}
+.i-gym-green,.i-gym-gray, .i-mine-green, .i-mine-gray{
+  vertical-align: top;
+  margin-right: 5px;
+}

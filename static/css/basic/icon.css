@@ -1,0 +1,58 @@
+.icon{
+  display: inline-block;
+  background-image: url('../imgs/icons.png');
+  background-size: 250px 250px;
+}
+.i-gym-gray{
+  width: 25px;
+  height: 25px;
+  background-position: 0px -45px;
+}
+.i-gym-green{
+  width: 25px;
+  height: 25px;
+  background-position: -27px -45px;
+}
+
+.i-mine-green{
+  width: 25px;
+  height: 25px;
+  background-position: -27px -182px;
+}
+.i-mine-gray{
+  width: 25px;
+  height: 25px;
+  background-position: 0px -182px;
+}
+
+.i-phone{
+  width: 22px;
+  height: 26px;
+  background-position: 0 -15px;
+}
+.i-clock{
+  width: 36px;
+  height: 36px;
+  background-position: 0 -74px;
+}
+
+.i-alipay{
+  width: 36px;
+  height: 36px;
+  background-position: -37px -142px;
+}
+.i-wechat{
+  width: 36px;
+  height: 35px;
+  background-position: 0 -142px;
+}
+.i-togo{
+  width: 10px;
+  height: 20px;
+  background-position: 0 -230px;
+}
+.i-success{
+  width: 25px;
+  height: 25px;
+  background-position: 0 -113px;
+}

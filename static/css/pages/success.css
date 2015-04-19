@@ -1,0 +1,20 @@
+.success-body{
+  padding-top: 10px;
+  background: #efefef;
+}
+.i-success{
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.s-text{
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.time-text{
+  color: #6a6a6a;
+  font-size: 15px;
+}
+.wrapper{
+  padding: 40px 20px 50px 20px;
+  background: white;
+}

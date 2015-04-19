@@ -1,0 +1,81 @@
+.slide{
+  position: relative;
+}
+
+.slide img{
+  width: 100%;
+}
+.name-mask{
+  padding:10px;
+  background: rgba(0,0,0,0.4);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.1em;
+}
+.text-wrapper{
+  padding: 10px;
+  padding-bottom: 0;
+}
+.label{
+  font-size: 1em;
+  font-weight: 700;
+}
+.gym-price{
+  color: #eb6100;
+  font-size: 20px;
+}
+.info p{
+  line-height: 35px;
+}
+.gym-time-select{
+  display: inline-block;
+  text-align: center;
+  color: #6a6a6a;
+  width: 135px;
+  height: 30px;
+  line-height: 30px;
+  background: #fefefe;
+  border: solid 1px #a5a5a5;
+  border-radius: 3px;
+  font-size: 1.1em;
+}
+.section{
+  border-bottom:solid 1px #eff1f3;
+  padding: 10px 0;
+}
+.btn{
+  margin-top: 0;
+}
+ol.introdution{
+  padding: 0 0 0 20px;
+  font-size: 0.9em;
+  margin-bottom: 30px;
+}
+.section-last{
+  border-bottom: 0;
+}
+ol.introdution li{
+  margin-bottom: 5px;
+}
+.distance{
+  text-align: center;
+  color: #43c67f;
+}
+.phone-wrapper{
+  border-left: solid 1px #eff1f3;
+  margin: 10px;
+  margin-left: 0;
+  padding-left: 10px;
+}
+.tc-gray{
+  margin: 10px 0;
+}
+.gym-info{
+  width: 13em;
+  text-overflow : ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

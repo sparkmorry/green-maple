@@ -1,0 +1,19 @@
+<div class="orders-body">
+  <div class="section">
+    <span>我的余额：<span class="tc-red">¥{{money}}</span></span>
+  </div>  
+
+  <p class="order-title">我的订单：</p>
+  <div class="order" ng-repeat = "order in orders">
+    <a href="#/order/{{order.order_id}}">
+      <p class="order-info">  
+        <span>兑换码：{{order.order_id}}</span>
+        <i class="icon i-togo fr"></i>
+        <span class="fr status-{{order.order_status}}">{{statusMap[order.order_status]}}</span>
+      </p>
+      <p class="order-time">{{order.updated_at}}</p>
+    </a>
+  </div>
+
+</div>
+
