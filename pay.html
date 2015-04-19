@@ -14,30 +14,36 @@
 <body class="pay-body">
   <div class="section">
     <img class="thumb" src="static/images/thumb.jpg">
-    <span>健身服务</span><span class="tc-red">X2</span>
-    <span>合计：<span class="tc-red">¥60</span></span>
+    <span>健身服务</span>
+    <!-- <span class="tc-red">X2</span> -->
+    <!-- <span>合计：<span class="tc-red">¥60</span></span> -->
+    <span>合计：<span class="tc-red" id="j-price"></span></span>
+
   </div>  
   <div class="section">
     <i class="icon i-clock"></i>
     <span>健身时间：</span>
-    <span>14:00--15:00</span>
+    <!-- <span>14:00--15:00</span> -->
+    <span id="j-time"></span>
   </div>
   <div>
     <p class="pay-method">支付方式</p>
     <ul class="pay-list">
-      <li>
+<!--       <li>
         <a href="success.html">
           <i class="icon i-wechat"></i>微信支付<i class="icon i-togo"></i></li>
-        </a>     
-      <li>
-        <a href="success.html">
-          <i class="icon i-alipay"></i>支付宝支付<i class="icon i-togo"></i>
         </a>
+      </li>  -->    
+      <li>
+        <div id="j-ali-pay">
+          <i class="icon i-alipay"></i>支付宝支付<i class="icon i-togo"></i>
+        </div>
       </li>
     </ul>
   </div>
+  <div id="j-pay-html"></div>
 
-  <script type="text/javascript">
-    document.addEventListener("touchstart", function(){}, true);
-  </script>
+  <script type="text/javascript" src="static/js/lib/zepto.js"></script>
+  <script type="text/javascript" src="static/js/module/query.js"></script> 
+  <script type="text/javascript" src="static/js/page/pay.js"></script>
 </body>

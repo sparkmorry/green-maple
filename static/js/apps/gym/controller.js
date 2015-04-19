@@ -105,67 +105,17 @@ angular.module('gymApp.controllers', [])
       if(ret.code == 0){
         $scope.errMsg='';
         console.log(ret.msg);
-        var url = '/pay/'+bid+'/'+bname+'/'+cname+'/'+tid;
-        console.log(url)
-        $location.path(url);
+        var url = '/pay.html?bid='+bid+'&bname='+bname+'&cname='+cname+'&tid='+tid+'&cid='+ret.data.cid;
+        // console.log(url)
+        // $location.path(url);
         setCookie('cid', ret.data.cid);
+        window.location.href = url;
       }else{
         $scope.errMsg=ret.msg;
       }
     });
   };  
 
-})
-.controller('payController', function ($scope, $location, $sce, $routeParams, gymService, messageCenterService) {
-  var bid = $routeParams.bid;
-  var bname = $routeParams.bname;
-  var cname = $routeParams.cname;
-  var tid = $routeParams.tid;
-
-  gymService.getBusinessDetail(bid).success(function(ret){
-    if(ret.code == 0){
-      var books = ret.data.book;
-      for(var i=0; i<books.length; i++){
-        if(books[i].tid == tid){
-          currenBook = books[i];
-        }       
-      }
-      $scope.currentPrice = currenBook.price;
-      $scope.currentTime = currenBook.start + "--" + currenBook.end;
-    }
-  });
-
-  function is_weixn(){  
-    var ua = navigator.userAgent.toLowerCase();  
-    if(ua.match(/MicroMessenger/i)=="micromessenger") {  
-      return true;  
-    } else {  
-      return false;  
-    }  
-  }  
-
-  $scope.payByAlipay = function(){
-    var isInweixin = is_weixn();
-    if(isInweixin){
-      $('#J-share-tip').show();
-      $('#J-i-know').bind('click', function(){
-        $('#J-share-tip').hide();
-      });      
-      return;
-    }else{
-      var cid = getCookie('cid');
-      gymService.getPayByAli(bid, cid, bname, cname, tid).success(function(ret){
-        if(ret.code == 0){
-          $scope.payHtml = $sce.trustAsHtml(ret.data);
-          // $scope.payHtml = ret.data;
-          // document.forms['alipaysubmit'].submit(); 
-        }else{
-          alert(ret.msg);
-          // $location.path('/order');
-        }
-      });          
-    }
-  }
 })
 .controller('orderController', function ($scope, $http, $location, $routeParams, gymService, messageCenterService) {
   var cid = getCookie('cid');
