@@ -145,7 +145,7 @@ angular.module('gymApp.controllers', [])
   }  
 
   $scope.payByAlipay = function(){
-    var isInweixin = true;
+    var isInweixin = is_weixn();
     if(isInweixin){
       $('#J-share-tip').show();
       $('#J-i-know').bind('click', function(){
