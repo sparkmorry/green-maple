@@ -56,22 +56,25 @@
 }
 
 .i-know{
-  width: 100px;
-  height: 30px;
-  color:white;
-  line-height: 30px;
-  margin: 20px auto;
-  text-align: center;
-  border-radius: 3px;
-  border: solid 1px white;
+  width: 100%;
+  height: 50px;
+  /* color: white; */
+  /* line-height: 30px; */
+  /* margin: 20px auto; */
+  /* text-align: center; */
+  /* border-radius: 3px; */
+  /* border: solid 1px white; */
+  position: absolute;
+  top: 58%;
 }
 .share-mask{
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.5);
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 400;
 }
 
 input[type="submit"]{
